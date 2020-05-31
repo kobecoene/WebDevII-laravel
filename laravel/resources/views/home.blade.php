@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    <img src={{asset('images/mockup_fixed.png') }} alt="mockup">
                 </div>
 
                 <div class="links">
