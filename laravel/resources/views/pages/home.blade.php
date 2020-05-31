@@ -6,4 +6,5 @@
 
 <p> {{ $content }}</p>
 
+<img class="mockup_image img" src="{{ asset($image) }}" alt="mockup">
 @endsection

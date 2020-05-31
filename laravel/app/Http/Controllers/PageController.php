@@ -9,9 +9,11 @@ class PageController extends Controller
     public function home() {
         $title = 'End of the first lesson';
         $content = 'Thanks for visiting';
+        $image = 'images/mockup_fixed.png';
 
         return view('pages.home', [
             'title' => $title,
+            'image' =>$image,
             'content' => $content
         ]);
     }
@@ -28,8 +30,8 @@ class PageController extends Controller
         return view('pages.contact');
     }
 
-    public function donation() {
-        return view('pages.donation');
+    public function donations() {
+        return view('pages.donations');
     }
 
     public function newsletter() {
