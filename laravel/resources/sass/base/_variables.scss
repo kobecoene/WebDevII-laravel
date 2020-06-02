@@ -1,8 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 $color-main: #0084FF;
 $color-blue: $color-main;
 $color-light-grey: #f1f1f1;
 $color-dark-grey: rgb(56, 56, 56);
 
-$font-main: 'Roboto', sans-serif;
+$color-title: $color-dark-grey;
+$color-body: rgb(148, 148, 148);
+
+$font-main: 'Work Sans', sans-serif;
+
+$height-header: 69px;
+$height-footer: 30px;

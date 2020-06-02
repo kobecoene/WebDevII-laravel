@@ -2,5 +2,19 @@
 
 body {
     font-family: $font-main;
-    color: $color-main;
+    color: $color-title;
+}
+
+h1 {
+    font-size: 30pt;
+}
+
+p {
+    font-size: 13pt;
+    color: $color-body;
+}
+
+.bodyPromo {
+    text-align: center;
+
 }

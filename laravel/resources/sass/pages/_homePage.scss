@@ -1,0 +1,45 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.homeContainer > h1 {
+    font-weight: 800;
+}
+
+.homeWrapper {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.homeContentWrapper {
+    width: 50%;
+}
+
+.homeImagePhone{
+    width: 300px;
+}
+
+.homeImagePhone > img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.homePlaystoreButtons {
+    display: flex;
+    justify-content: center;
+}
+
+.appstoreButton, .playstoreButton {
+    height: 60px;
+    object-fit: cover;
+}
+
+.playstoreButton {
+    height: 90px;
+    margin-top: -15px;
+}

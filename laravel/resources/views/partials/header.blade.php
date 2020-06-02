@@ -12,7 +12,13 @@
 <body>
 
     <header class="header">
-        <a href="#default" class="logo">CompanyLogo</a>
+        <a href="{{ route('home') }}">
+            <div class="headerLogo">
+                <img src="{{asset('images/messenger_logo.png')}}" alt="logo">
+                <p>Messenger</p>
+            </div>
+        </a>
+
         <nav class="header-right">
             {{-- de Nav::isRoute komt van https://www.youtube.com/watch?v=p8wFTRCwak0 --}}
             <a href="{{ route('home') }}" class="{{ Nav::isRoute('home') }}">Home</a>
