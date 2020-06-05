@@ -1,9 +1,53 @@
 @import '../base/index';
 
 .footer {
-    width: 100%;
-    height: $height-footer;
+    max-width: 100%;
     background-color: $color-light-grey;
     margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter > p {
+    margin-right: 10px;
+}
+
+.newsletterInput > input {
+    height: 20px;
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: white;
+    display: block;
+    float: left;
+}
+
+.newsletterInput > button {
+    background-color: $color-main;
+    height: 40px;
+    width: 40px;
+    color: $color-light-grey;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition-duration: .2s;
+}
+
+.newsletterInput > button:focus , input:focus {
+    outline: none;
+}
+
+.newsletterInput > button:hover {
+    background-color: $color-light-blue;
+    transition-duration: .2s;
+}
