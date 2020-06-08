@@ -10,11 +10,9 @@ class NewsLetterController extends Controller
     public function postNewsletter(Request $request) {
         if ( ! Newsletter::isSubscribed($request->email) )
         {
-            Newsletter::subscribe($request->email);
-            return redirect('/')->with('success', 'Thanks For Subscribe');
-
-        } else {
-            return redirect('/')->with('failure', 'Sorry! You have already subscribed ');
+            Newsletter::subscribePending($request->email);
+            return redirect('newsletter')->with('success', 'Thanks For Subscribing');
         }
+        return redirect('newsletter')->with('failure', 'Sorry! You have already subscribed ');
     }
 }
