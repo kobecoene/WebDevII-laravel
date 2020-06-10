@@ -3,7 +3,7 @@
     overflow: hidden;
     background-color: $color-light-grey;
     padding: 10px 20px;
-    margin-bottom: 20px;
+    margin-bottom: $margin-header-footer;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,9 +46,11 @@
     float: right;
   }
 
+
   .headerLogo {
     width: 30px;
-    display: flex
+    display: flex;
+    align-items: center;
   }
 
   .headerLogo > img {

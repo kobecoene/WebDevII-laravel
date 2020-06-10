@@ -1,13 +1,66 @@
 @import '../base/index';
+@import "node_modules/bootstrap/scss/bootstrap";
 
 .footer {
-    max-width: 100%;
+    margin-top: $margin-header-footer;
+}
+
+.footer-top {
     background-color: $color-light-grey;
-    margin-top: 20px;
-    padding: 20px;
+    padding-inline-start: 80px 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-evenly;
+}
+
+.segment-one h3{
+    letter-spacing: 3px;
+    margin: 10px 0;
+}
+
+.segment-two h2::before {
+    content: '|';
+    color: $color-main;
+    padding-right: 10px;
+}
+
+.segment-two ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.segment-two ul li {
+    border-bottom: 1px solid $color-dark-grey ;
+    line-height: 40px;
+}
+
+.segment-two ul li a {
+    color: $color-dark-grey;
+    text-decoration: none;
+}
+
+.segment-three h2::before {
+    content: '|';
+    color: $color-main;
+    padding-right: 10px;
+}
+
+.segment-three a i {
+    font-size: 15pt;
+    color: $color-dark-grey;
+    padding: 10px 12px;
+    transition-duration: .3s;
+}
+
+.segment-three a i:hover {
+    color: $color-main;
+    transition-duration: .3s;
+}
+
+.segment-four h2::before {
+    content: '|';
+    color: $color-main;
+    padding-right: 10px;
 }
 
 .newsletter {
@@ -20,10 +73,10 @@
     margin-right: 10px;
 }
 
-.newsletterInput > input {
-    height: 20px;
+.newsletterInput > .inputNewsletter {
+    height: 40px;
     width: 200px;
-    padding: 10px;
+    padding-left: 10px;
     border: none;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -32,7 +85,7 @@
     float: left;
 }
 
-.newsletterInput > button {
+.newsletterInput > .btnNewsletter {
     background-color: $color-main;
     height: 40px;
     width: 40px;
@@ -43,11 +96,26 @@
     transition-duration: .2s;
 }
 
-.newsletterInput > button:focus , input:focus {
+.newsletterInput > .btnNewsletter:focus , .inputNewsletter:focus {
     outline: none;
 }
 
 .newsletterInput > button:hover {
     background-color: $color-light-blue;
     transition-duration: .2s;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .md-mb-30 {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    .sm-mb-30 {
+        margin-bottom: 30px;
+    }
+    .footer-top {
+        padding: 50px 0;
+    }
 }

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +14,7 @@
 <body>
 
     <header class="header">
-        <a href="{{ route('home') }}">
+        <a href="{{ route('home') }}" class="header-first">
             <div class="headerLogo">
                 <img src="{{asset('images/messenger_logo.png')}}" alt="logo">
                 <p>Messenger</p>

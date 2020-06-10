@@ -35,7 +35,11 @@ class PageController extends Controller
     }
 
     public function donations() {
-        return view('pages.donations');
+        $title = "Make a donation";
+
+        return view('pages.donations', [
+            'title' => $title
+        ]);
     }
 
     public function newsletter() {

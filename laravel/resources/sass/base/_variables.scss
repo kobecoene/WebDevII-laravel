@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 $color-main: #0084FF;
 $color-blue: $color-main;
@@ -11,7 +11,6 @@ $color-grey: rgb(167, 167, 167);
 $color-title: $color-dark-grey;
 $color-body: rgb(148, 148, 148);
 
-$font-main: 'Barlow', sans-serif;
+$font-main: 'Nunito', sans-serif;
 
-$height-header: 69px;
-$height-footer: 30px;
+$margin-header-footer: 40px;
