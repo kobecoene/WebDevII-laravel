@@ -24,7 +24,9 @@ Route::post('/contact', 'MailController@postContact')->name('contact.save');
 
 Route::post('/newsletter', 'NewsLetterController@postNewsletter')->name('newsletter');
 
-Route::get('/donations', 'PageController@donations')->name('donations');
+Route::get('/donations', 'DonationController@donations')->name('donations');
+Route::post('/donations', 'DonationController@postDonations')->name('donations.save');
+
 Route::get('/privacy', 'PageController@privacy')->name('privacy');
 
 Auth::routes();

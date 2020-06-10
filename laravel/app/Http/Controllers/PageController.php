@@ -34,14 +34,6 @@ class PageController extends Controller
         ]);
     }
 
-    public function donations() {
-        $title = "Make a donation";
-
-        return view('pages.donations', [
-            'title' => $title
-        ]);
-    }
-
     public function newsletter() {
         return view('pages.newsletter');
     }

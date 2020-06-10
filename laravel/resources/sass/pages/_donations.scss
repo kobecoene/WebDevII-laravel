@@ -3,9 +3,64 @@
     flex-direction: column;
     align-items: center;
     .wrapper {
-        width: 7    0%;
         .section1 {
             text-align: center;
+        }
+        .section2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            input, textarea {
+                display: block;
+                width: 400px;
+                margin-bottom: 15px;
+                padding: 10px 0 10px 15px;
+                border-radius: 15px;
+                border: none;
+                background-color: $color-light-grey;
+            }
+
+            input:focus, textarea:focus {
+                outline: none;
+                border: solid 1px $color-main;
+            }
+
+            textarea {
+                min-height: 50px;
+                max-height: 200px;
+                min-width: 400px;
+                max-width: 500px;
+            }
+
+            button {
+                border-radius: 15px;
+                border: none;
+                background-color: $color-main;
+                padding: 10px;
+                color: $color-light-grey;
+                height: 40px;
+                width: 100px;
+                transition-duration: .2s;
+            }
+
+            button:hover{
+                background-color: $color-light-blue;
+                transition-duration: .2s;
+                cursor: pointer;
+            }
+
+            button:focus{
+                outline: none;
+            }
+
+            .checked {
+                display: flex;
+                align-items: center;
+                #check {
+                    margin-right: 10px;
+                    width: initial;
+                }
+            }
         }
     }
 

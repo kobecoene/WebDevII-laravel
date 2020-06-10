@@ -129,14 +129,14 @@ body {
   border-radius: 5px;
 }
 
-form {
+.contactWrapper form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-form > input,
-textarea {
+.contactWrapper form > input,
+.contactWrapper textarea {
   padding: 10px;
   width: 80%;
   margin-bottom: 10px;
@@ -145,13 +145,13 @@ textarea {
   background-color: #f1f1f1;
 }
 
-form > input:focus,
-textarea:focus {
+.contactWrapper form > input:focus,
+.contactWrapper textarea:focus {
   outline: none;
   border: solid 1px #0084FF;
 }
 
-form > button {
+.contactWrapper form > button {
   border-radius: 15px;
   border: none;
   background-color: #0084FF;
@@ -162,17 +162,17 @@ form > button {
   transition-duration: 0.2s;
 }
 
-form > button:hover {
+.contactWrapper form > button:hover {
   background-color: #6ab7ff;
   transition-duration: 0.2s;
   cursor: pointer;
 }
 
-form > button:focus {
+.contactWrapper form > button:focus {
   outline: none;
 }
 
-form > textarea {
+.contactWrapper form > textarea {
   max-width: 90%;
   max-height: 200px;
   min-width: 30%;
@@ -256,12 +256,69 @@ form > textarea {
   align-items: center;
 }
 
-.donationContainer .wrapper {
-  width: 7 0%;
-}
-
 .donationContainer .wrapper .section1 {
   text-align: center;
+}
+
+.donationContainer .wrapper .section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.donationContainer .wrapper .section2 input,
+.donationContainer .wrapper .section2 textarea {
+  display: block;
+  width: 400px;
+  margin-bottom: 15px;
+  padding: 10px 0 10px 15px;
+  border-radius: 15px;
+  border: none;
+  background-color: #f1f1f1;
+}
+
+.donationContainer .wrapper .section2 input:focus,
+.donationContainer .wrapper .section2 textarea:focus {
+  outline: none;
+  border: solid 1px #0084FF;
+}
+
+.donationContainer .wrapper .section2 textarea {
+  min-height: 50px;
+  max-height: 200px;
+  min-width: 400px;
+  max-width: 500px;
+}
+
+.donationContainer .wrapper .section2 button {
+  border-radius: 15px;
+  border: none;
+  background-color: #0084FF;
+  padding: 10px;
+  color: #f1f1f1;
+  height: 40px;
+  width: 100px;
+  transition-duration: 0.2s;
+}
+
+.donationContainer .wrapper .section2 button:hover {
+  background-color: #6ab7ff;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.donationContainer .wrapper .section2 button:focus {
+  outline: none;
+}
+
+.donationContainer .wrapper .section2 .checked {
+  display: flex;
+  align-items: center;
+}
+
+.donationContainer .wrapper .section2 .checked #check {
+  margin-right: 10px;
+  width: initial;
 }
 
 body {
