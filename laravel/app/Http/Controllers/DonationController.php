@@ -1,36 +1,34 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Str;
 use Illuminate\Http\Request;
-use Carbon\Carbon as Carbon;
-
-$donations = [];
 
 class DonationController extends Controller
 {
     public function donations() {
         $title = "Make a donation";
+        $donations = DB::table('donations')->get();
 
         return view('pages.donations', [
-            'title' => $title
+            'title' => $title,
+            'donations' => $donations
         ]);
     }
 
     public function postDonations(Request $r) {
-
+        $amount = number_format((float)$r->amount, 2, '.', '');
         $data = [
             'name' => $r->name,
             'email' => $r->email,
-            'amount' => $r->amount,
+            'amount' => $amount,
             'message' => $r->message,
             'check' => $r->check,
-            'dateNow' => date('Y-m-d H:i:s')
+            'date' => date('Y-m-d H:i:s')
         ];
 
         DB::table('donations')->insert($data);
+        return redirect('donations')->with('success', 'Thanks For Subscribing');
+
     }
 }

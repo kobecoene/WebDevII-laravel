@@ -10,7 +10,7 @@
                 <input type="email" name="email" id="email" placeholder="E-mail" required>
                 <input type="text" name="subject" id="subject" placeholder="Subject" required>
                 <textarea name="content" id="content" cols="30" rows="10" placeholder="Bericht" required> </textarea>
-                <button type="submit">Verzend</button>
+                <button type="submit">Send</button>
             </form>
         </div>
     </div>

@@ -43,3 +43,20 @@
     height: 90px;
     margin-top: -15px;
 }
+
+@media screen and (max-width: 500px) {
+    .homeImagePhone {
+        display: none;
+    }
+
+    .homeWrapper {
+        width: 100%;
+    }
+
+    .homeContentWrapper {
+        width: 60%;
+        h1 {
+            text-align: center;
+        }
+    }
+  }

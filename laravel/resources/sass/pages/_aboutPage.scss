@@ -63,3 +63,18 @@
 
 
 }
+
+@media screen and (max-width: 900px) {
+    .aboutContainer{
+        .section{
+            padding: 20px;
+            height: auto;
+        }
+        .section2{
+            height: 300px;
+            .image {
+                height: 100px;
+            }
+        }
+    }
+}

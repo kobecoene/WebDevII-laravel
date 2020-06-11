@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6 col-xs-12 segment segment-one md-mb-30 sm-mb-30">
-                    <h3>TITLE</h3>
+                    <h3>Messenger</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At molestias ratione possimus voluptate perspiciatis iusto sunt commodi modi provident voluptatibus, laboriosam illo dignissimos nam optio corrupti, exercitationem est omnis odit?s</p>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12 segment segment-two md-mb-30 sm-mb-30">
@@ -13,7 +13,7 @@
                         <li><a href="{{ route('about') }}">About</a></li>
                         <li><a href="{{ route('blog') }}">Blog</a></li>
                         <li><a href="{{ route('contact') }}">Contact</a></li>
-                        <li><a href="{{ route('donations') }}">Dontations</a></li>
+                        <li><a href="{{ route('donations') }}">Donations</a></li>
                         <li><a href="{{ route('privacy') }}">Privacy</a></li>
                     </ul>
                 </div>

@@ -16,12 +16,12 @@ class CreateDonationsTable extends Migration
         Schema::create('donations', function (Blueprint $table) {
             $table->id();
 
-            $table->name();
-            $table->email();
-            $table->amount();
-            $table->message();
-            $table->check();
-            $table->dateNow();
+            $table->string('name');
+            $table->string('email');
+            $table->string('amount');
+            $table->string('message');
+            $table->string('check')->nullable();
+            $table->string('date');
 
             $table->timestamps();
         });

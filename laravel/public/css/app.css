@@ -80,6 +80,24 @@ body {
   margin-top: -15px;
 }
 
+@media screen and (max-width: 500px) {
+  .homeImagePhone {
+    display: none;
+  }
+
+  .homeWrapper {
+    width: 100%;
+  }
+
+  .homeContentWrapper {
+    width: 60%;
+  }
+
+  .homeContentWrapper h1 {
+    text-align: center;
+  }
+}
+
 body {
   font-family: "Nunito", sans-serif;
   font-family: serif;
@@ -179,6 +197,12 @@ body {
   min-height: 50px;
 }
 
+@media screen and (max-width: 900px) {
+  .contactWrapper {
+    width: 80%;
+  }
+}
+
 .aboutContainer {
   margin: 0;
   padding: 0;
@@ -250,14 +274,56 @@ body {
   border-left: solid 2px #0084FF;
 }
 
+@media screen and (max-width: 900px) {
+  .aboutContainer .section {
+    padding: 20px;
+    height: auto;
+  }
+
+  .aboutContainer .section2 {
+    height: 300px;
+  }
+
+  .aboutContainer .section2 .image {
+    height: 100px;
+  }
+}
+
 .donationContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.donationContainer .wrapper .section1 {
+.donationContainer .wrapper {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.donationContainer .wrapper .succes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.donationContainer .wrapper .succes .image {
+  height: 150px;
+}
+
+.donationContainer .wrapper .succes .image img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.donationContainer .wrapper .section1,
+.donationContainer .wrapper .section3 {
   text-align: center;
+  margin-top: 20px;
 }
 
 .donationContainer .wrapper .section2 {
@@ -319,6 +385,47 @@ body {
 .donationContainer .wrapper .section2 .checked #check {
   margin-right: 10px;
   width: initial;
+}
+
+.donationContainer .wrapper .section3,
+.donationContainer .wrapper .section4 {
+  background-color: #0084FF;
+  color: #f1f1f1;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.donationContainer .wrapper .section3 .wrapper,
+.donationContainer .wrapper .section4 .wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.donationContainer .wrapper .section3 .wrapper table,
+.donationContainer .wrapper .section4 .wrapper table {
+  border-spacing: 30px;
+  border-collapse: separate;
+}
+
+.donationContainer .wrapper .section4 {
+  margin-bottom: -40px;
+}
+
+.privacyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.privacyContainer .wrapper {
+  width: 80%;
 }
 
 body {
@@ -11402,8 +11509,6 @@ a.text-dark:focus {
   }
 }
 
-/* Style the header with a grey background and some padding */
-
 .header {
   overflow: hidden;
   background-color: #f1f1f1;
@@ -11413,8 +11518,6 @@ a.text-dark:focus {
   justify-content: space-between;
   align-items: center;
 }
-
-/* Style the header links */
 
 .header-right a {
   float: left;
@@ -11427,14 +11530,10 @@ a.text-dark:focus {
   border-radius: 4px;
 }
 
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-
 .header-right a.logo {
   font-size: 25px;
   font-weight: bold;
 }
-
-/* Change the background color on mouse-over */
 
 .header-right a:hover {
   background-color: #ddd;
@@ -11448,8 +11547,6 @@ a {
 a.active {
   color: #0084FF;
 }
-
-/* Float the link section to the right */
 
 .header-right {
   float: right;
@@ -11467,8 +11564,6 @@ a.active {
      object-fit: contain;
   padding-right: 10px;
 }
-
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 
 @media screen and (max-width: 500px) {
   .header a {
